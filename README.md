@@ -22,21 +22,18 @@ A simplified version of Uber's backend that handles:
 ---
 
 ## 🏗️ Architecture (Evolving)
+```
 Rider App
-↓
+    ↓
 API Gateway
-↓
-┌─────────────────────────────────────┐
-│           │              │          │
-Rider    Driver      Matching    Pricing
-Service  Service      Engine     Service
-│           │              │          │
-MySQL     Redis          Kafka      Redis
-
-
-
-
----
+    ↓
+┌─────────────────────────────────────────┐
+│          │              │               │
+Rider    Driver       Matching        Pricing
+Service  Service       Engine         Service
+│          │              │               │
+MySQL     Redis          Kafka           Redis
+```
 
 ## 🛠️ Tech Stack
 
